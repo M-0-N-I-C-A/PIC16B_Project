@@ -9,3 +9,18 @@
 We would like to predict how vulnerable a person is to several most common deadly diseases including lung cancer, large intestine cancer, cervical cancer etc. and present the result on a webapp. To achieve this objective, we would first collect large data sets of the listed diseases’ patients. Then, we would use machine learning to identify the top ten relevant factors contributing to a certain disease such as the frequency of smoking cigarettes and the sleeping schedules. Finally, a “risk index” will be calculated for each user.
 
 ## Planned Deliverables
+We aim to create an interactive webapp that allows the users to choose a certain disease, key in their own data and receive a “risk index” that indicates the possibility of suffering from that disease and several personalized infographics regarding the particular disease.
+
+### Scenario 1: Full Success
+* An interactive webapp with carefully-designed attractive interfaces
+* Users being directed to different interfaces based on their input
+* A wide range (>=10) of deadly diseases’ predictions
+* Higher accuracy of predictions compared to professional medical advice
+* Comparison between general population’s data and patients’ data on different risk factors through visualization
+* Providing follow-up advice
+
+### Scenario 2: Partial Success
+* An interactive webapp with a single attractive interface
+* Predicting a single disease 
+* High accuracy compared to professional medical advice
+* Providing follow-up advice
