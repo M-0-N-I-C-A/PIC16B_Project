@@ -57,3 +57,25 @@ While white patients might benefit from the existence of our product, patients o
 Overall, we believe that the existence of our health-related product is very likely to make the world a better place by raising people’s awareness of early-stage cancer prevention, the relationship between daily habits and disease development, and the long-term benefit of getting relevant vaccinations. Our assumptions are listed as follows:
 1. The commonality among patients of a certain disease will enable our model to predict the probability of a new individual suffering from the disease with high accuracy.
 2. Early-stage cancer detection can prevent the disease’s rapid development and would therefore increase people’s life expectancy and make the world a better place.
+
+## Tentative Timeline
+### In 2 weeks, we hope to:
+Collect, prepare, and clean the data set
+Learn the basics of making a webapp
+Finalize the list of diseases to be analyzed
+
+### In 4 weeks, we hope to:
+Finish feature selection through machine learning for each disease
+Find the type of visualization that would best present the comparison of risk factors between general population’s data and patients’ data
+Construct the basic structure of our webapp
+
+### In 6 weeks, we hope to:
+Ensure the webapp successfully accepts inputs and gives outputs for a single disease
+Plot relevant figures of the general population’s data and patients’ data
+Realize the transition between different interfaces
+
+### In 8 weeks, we hope to:
+Ensure the webapp runs smoothly for all listed diseases
+Add the previously plotted figures to the webapp
+Add appropriate advice for each user in the webapp
+Make the webapp more attractive and good-looking
