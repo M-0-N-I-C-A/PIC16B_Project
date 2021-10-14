@@ -37,3 +37,12 @@ We need large data sets about patients of our desired list of diseases covering 
     - Packages: plotly, matplotlib
 - Webapp design
     - Packages: django, ....
+
+## What You Will Learn
+    We will learn about
+        * How to design, create, and maintain a webapp with the above-mentioned python packages
+        * How to clean up and deal with large data sets and interaction with databases
+        * How to improve prediction accuracy through machine learning
+        * How to visualize more complicated data
+        * How to version control through git and GitHub
+        * How to detect and prevent the development of specified diseases
