@@ -28,3 +28,12 @@ We aim to create an interactive webapp that allows the users to choose a certain
 ## Resources Required
 We need large data sets about patients of our desired list of diseases covering both their lifestyle and medical information. For example, for cervical cancer, we would include data on age, number of sexual partners, first sexual intercourse (age), number of pregnancies, smokes (packs/year) etc., as shown in https://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29, and large data sets about the general population including both their lifestyle and medical information.
 
+## Tools and Skills Required
+- Machine learning to select the most important features
+    - Packages: pandas, scikit-learn, tensorflow, numpy
+- Database management to clean and prepare the data to be used
+    - Packages: pandas,  sqlite, numpy
+- Advanced interactive visualization techniques to make our graphics more understandable and appealing
+    - Packages: plotly, matplotlib
+- Webapp design
+    - Packages: django, ....
