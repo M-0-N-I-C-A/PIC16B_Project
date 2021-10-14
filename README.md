@@ -1,8 +1,11 @@
 # Project Proposal
 
-Group Members:
+Group members:
 - Joanna Shen
 - Monica Zheng
 - Wenxin Cai
 
-## 
+## Abstract
+The project 
+
+## Planned Deliverables
