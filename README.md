@@ -52,3 +52,8 @@ We will learn about
 - Difficulty in identifying the most important risk factors with a higher accuracy
 - Difficulty in creating multiple interfaces in the webapp
 
+## Ethics
+While white patients might benefit from the existence of our product, patients of color might be harmed by our product. Due to pre-existing inequality, patients of color have less access to health care and medical services than white patients. As a result, the available data sets online mostly consist of data on white patients and therefore our webapp might be influenced by the inherent bias and not be able to produce highly accurate predictions for other groups of patients. This could exacerbate the inequality in access to accurate and timely disease diagnosis between patients of color and white patients. 
+Overall, we believe that the existence of our health-related product is very likely to make the world a better place by raising people’s awareness of early-stage cancer prevention, the relationship between daily habits and disease development, and the long-term benefit of getting relevant vaccinations. Our assumptions are listed as follows:
+1. The commonality among patients of a certain disease will enable our model to predict the probability of a new individual suffering from the disease with high accuracy.
+2. Early-stage cancer detection can prevent the disease’s rapid development and would therefore increase people’s life expectancy and make the world a better place.
