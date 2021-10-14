@@ -46,3 +46,9 @@ We will learn about
 * How to visualize more complicated data
 * How to version control through git and GitHub
 * How to detect and prevent the development of specified diseases
+
+## Risks
+- Lack of accessibility to appropriate data sets
+- Difficulty in identifying the most important risk factors with a higher accuracy
+- Difficulty in creating multiple interfaces in the webapp
+
