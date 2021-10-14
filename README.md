@@ -24,3 +24,7 @@ We aim to create an interactive webapp that allows the users to choose a certain
 * Predicting a single disease 
 * High accuracy compared to professional medical advice
 * Providing follow-up advice
+
+## Resources Required
+We need large data sets about patients of our desired list of diseases covering both their lifestyle and medical information. For example, for cervical cancer, we would include data on age, number of sexual partners, first sexual intercourse (age), number of pregnancies, smokes (packs/year) etc., as shown in https://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29, and large data sets about the general population including both their lifestyle and medical information.
+
