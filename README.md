@@ -1,6 +1,6 @@
 # Project Proposal
 
-Group members:
+Group Members:
 - Joanna Shen
 - Monica Zheng
 - Wenxin Cai
