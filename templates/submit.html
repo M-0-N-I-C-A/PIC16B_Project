@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Submit{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+      <label for="name">Your name:</label>
+      <input type="text" name="name" id="name">
+      <br>
+      <label for="age">Your age:</label>
+      <input type="text" name="age" id="age">
+      <br>
+      <label for="gender">Your gender:</label>
+      <input type="text" name="gender" id="gender">
+      <br>
+      <label for="height">Your height (cm):</label>
+      <input type="text" name="height" id="height">
+      <br>
+      <label for="weight">Your weight (kg):</label>
+      <input type="text" name="weight" id="weight">
+      <br>
+      <label for="weight">Your systolic blood pressure:</label>
+      <input type="text" name="systolic" id="systolic">
+      <br>
+      <label for="weight">Your diastolic blood pressure:</label>
+      <input type="text" name="diastolic" id="diastolic">
+      <br>
+      <label for="smoke">Whether you smoke or not:</label>
+      <input type="radio" name="smoke" id="yes" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" name="smoke" id="no" value="no">
+      <label for="no">No</label>
+      <br>
+      <input type="submit" value="Submit information">
+  </form>
+
+  {% if info %}
+    <br>
+    <b>Hello {{name}! Thanks for submitting your information!</b>
+  {% endif %}
+
+{% endblock %}
