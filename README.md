@@ -1,11 +1,8 @@
 Questions:
 
-1. How to apply our machine learning model to a specific user input in Google Colab?
+1. How do you think of the way we select our features? Is it valid to select the optimal one by comparing the performance of these three combinations?
 
-2. How to incorporate the machine learning model into our webapp (which file)? Should we wrap up the machine learning model in the function in app.py file ?
-
-3. If we end up with data processing, data visualization, and machine learning model, will it satisty the project requirement?
-
+2. Do you think the testing accuracy around 70% is high enough to make our prediction?
 
 # Project Proposal
 
