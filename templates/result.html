@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
 
-{% block header %}
-  <h1>{% block title %}Health Index{% endblock %}</h1>
-{% endblock %}
+<!doctype html>
+<html>
+ <body>
+  <h1>Health Index</h1>
+  <div id='chart' class='chart'”></div>
+</body>
 
-{% block content %}
-{% if info %}
-<img src="distribution.html"/>
-{% endif %}
-{% endblock %}
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+</html>
