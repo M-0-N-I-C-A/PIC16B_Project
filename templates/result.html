@@ -6,14 +6,6 @@
 
 {% block content %}
 {% if info %}
-  {% for i in info %}
-   Hi {{i[1]}}!
-   <br>
-   Your BMI is {{i[5] / (i[4] / 100) ** 2}}.
-   <br>
-   <b>You are within the normal range!</b>
-   <br>
-   <br>
-  {% endfor %}
+<img src="distribution.html"/>
 {% endif %}
 {% endblock %}
