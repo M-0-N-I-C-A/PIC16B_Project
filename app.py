@@ -2,8 +2,10 @@ from flask import Flask, g, current_app, render_template, request
 
 import sqlite3, math
 import pandas as pd
+import json
+import plotly
 from plotly import express as px
-from plotly.io import write_html
+
 
 app = Flask(__name__)
 
@@ -70,7 +72,8 @@ def submit():
                                systolic=systolic, 
                                diastolic=diastolic)
 
-def plot_info():
+@app.route("/result/")
+def result():
     df = pd.read_csv("clean_df.csv")
 
     fig = px.histogram(df,
@@ -78,11 +81,6 @@ def plot_info():
                        width = 600,
                        height = 300)
 
-    write_html(fig, "distribution.html", auto_open=True)
-    return(fig)
-
-@app.route("/result/")
-def result():
-    info = plot_info()
+    graphJSON = json.dumps(fig, cls = plotly.utils.PlotlyJSONEncoder)
     # render the result.html template
-    return render_template("result.html", info=info)
+    return render_template("result.html", graphJSON=graphJSON)
