@@ -1,3 +1,9 @@
+Questions:
+
+1. How do you think of the way we select our features? Is it valid to select the optimal one by comparing the performance of these three combinations?
+
+2. Do you think the testing accuracy around 70% is high enough to make our prediction?
+
 # Project Proposal
 
 ## Group Members:

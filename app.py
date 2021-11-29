@@ -1,6 +1,11 @@
 from flask import Flask, g, current_app, render_template, request
 
 import sqlite3, math
+import pandas as pd
+import json
+import plotly
+from plotly import express as px
+
 
 app = Flask(__name__)
 
@@ -27,12 +32,10 @@ def insert_info(request):
     # extract the info from request
     name = request.form["name"]
     age = request.form["age"]
-    gender = request.form["gender"]
     height = request.form["height"]
     weight = request.form["weight"]
     systolic = request.form["systolic"]
     diastolic = request.form["diastolic"]
-    smoke = request.form["smoke"]
 
     # connect to the database
     db = get_info_db()
@@ -40,8 +43,8 @@ def insert_info(request):
     # use a cursor to insert the message into the database
     cursor = db.cursor()
     cursor.execute(
-        'INSERT INTO info (name, age, gender, height, weight, systolic, diastolic, smoke) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-        (name, age, gender, height, weight, systolic, diastolic, smoke)
+        'INSERT INTO info (name, age, height, weight, systolic, diastolic) VALUES (?, ?, ?, ?, ?, ?)',
+        (name, age, height, weight, systolic, diastolic)
     )
     # save the insertion
     db.commit()
@@ -49,7 +52,7 @@ def insert_info(request):
     # close the database connection
     db.close()
 
-    return(name, age, gender, height, weight, systolic, diastolic, smoke)
+    return(name, age, height, weight, systolic, diastolic)
 
 @app.route("/submit/", methods = ["POST", "GET"])
 def submit():
@@ -60,34 +63,24 @@ def submit():
     # and render the submit.html with parameters
     # in the POST case
     else:
-        name, age, gender, height, weight, systolic, diastolic, smoke = insert_info(request)
+        name, age, height, weight, systolic, diastolic = insert_info(request)
         return render_template("submit.html", 
                                name=name,
-                               age=age, 
-                               gender=gender, 
+                               age=age,  
                                height=height,
                                weight=weight, 
                                systolic=systolic, 
-                               diastolic=diastolic, 
-                               smoke=smoke)
-
-def random_info():
-    # connect to the database
-    db = get_info_db()
-
-    # use a cursor to select a collection of n random messages
-    # from the database
-    cursor = db.cursor()
-    cursor.execute(f'SELECT * FROM info')
-    result = cursor.fetchall()
-
-    # close the database connection
-    db.close()
-
-    return(result)
+                               diastolic=diastolic)
 
 @app.route("/result/")
 def result():
-    info = random_info()
-    # render the view.html template with the info as an argument
-    return render_template("result.html", info=info)
+    df = pd.read_csv("clean_df.csv")
+
+    fig = px.histogram(df,
+                       x = "weight",
+                       width = 600,
+                       height = 300)
+
+    graphJSON = json.dumps(fig, cls = plotly.utils.PlotlyJSONEncoder)
+    # render the result.html template
+    return render_template("result.html", graphJSON=graphJSON)
