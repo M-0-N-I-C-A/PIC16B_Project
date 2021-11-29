@@ -2,10 +2,8 @@ CREATE TABLE IF NOT EXISTS info (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     age INTEGER NOT NUll,
-    gender TEXT NOT NULL,
     height FLOAT NOT NULL,
     weight FLOAT NOT NULL,
     systolic INTEGER NOT NULL,
-    diastolic INTEGER NOT NULL,
-    smoke BOOLEAN NOT NULL
+    diastolic INTEGER NOT NULL
 );
