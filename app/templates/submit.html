@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-  <form method="post">
+  <form method="post" enctype="multipart/form-data">
       <label for="name">Your name:</label>
       <input type="text" name="name" id="name">
       <br>
@@ -48,7 +48,9 @@
   {% if risk %}
     <br>
     Hello {{name}}! Thanks for submitting your information!
-    {% if risk == 1 %}
+    <br>
+    <br>
+    {% if risk == 2 %}
     You are at a risk of cardiovascular disease! Please go to see your doctor!
     {% else %}
     You are healthy!
