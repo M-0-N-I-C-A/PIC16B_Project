@@ -1,10 +1,3 @@
-write a thorough demonstration of the functionality of your project in the top-level README.md file. Think of this as a tutorial for someone who wants to learn to use your tools. 
-
-If you created a webapp or other project for which the user is not expected to directly interact with code, you may instead use this space to carefully describe what your app does and what its limitations might be. 
-
-including careful instructions on how I can run the app and what I should do to observe its functionality. 
-
-
 # Introduction
 
 Our overall objective of the project is to predict whether an individual is at risk of getting cardiovascular disease given his personal data. Our project has two parts:
@@ -49,3 +42,9 @@ Here are two examples showing different prediction results based on user input:
 ![input2.jpg](/images/input2.jpg)
 
 ![result2.jpg](/images/result2.jpg)
+
+We recognize that our app might have the following limitations:
+
+- Since the accuracy of the multinomial logistic regression model is 73% on the test data set, our webapp may make inaccurate predictions and provide incorrect suggestions for our users.
+
+- Since we have not deployed our webapp online by Heorku, other people do not have direct access to our webapp.
