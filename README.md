@@ -1,12 +1,12 @@
 # Introduction
 
-Our overall objective of the project is to predict whether an individual is at risk of getting cardiovascular disease given his personal data. Our project has two parts:
+Our overall objective of the project is to predict whether an individual is at risk of cardiovascular disease given his personal data. Our project has the following two parts.
 
 ## Part 1: Data Visualization and Machine Learning
 
 This part can be found in the `health-inspector.ipynb` notebook file. 
 
-We start by accessing a cardiovascular disease data set. The data file `cardio-train.csv` is in the directory called `data`. Then we visualize the data with a heatmap, a box-and-whisker plot, and a kernel density estimate (KDE) plot to find whether correlations exist between different features in the data set and whether outliers exist in the data set. Next, we use these results to clean the data set for better model perfomance.
+We start by accessing a cardiovascular disease data set that contains standard health information and information on the presence/absence of cardiovascular disease for over 70,000 patients. The data file `cardio-train.csv` is in the directory called `data`. Then we visualize the data with a heatmap, a box-and-whisker plot, and a kernel density estimate (KDE) plot to find whether correlations exist between different features in the data set and whether outliers exist in the data set. Next, we use these results to clean the data set for better model perfomance.
 
 In the machine learning part, we create three different models:
 
