@@ -31,7 +31,7 @@ After clicking the `Submit your information`, users will be directed to the subm
 
 Here're two examples of two different results our webapp will show based on different user input:
 
-1. Tom is our first user.
+- Tom is our first user.
 
 ![input1.jpg](/images/input1.jpg)
 
