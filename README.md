@@ -41,7 +41,7 @@ He inputs his information as shown in the above image and clicks the `Submit inf
 
 As shown in this above image, our webapp predicts that he is healthy, i.e. not at risk of cardiovascular disease, based on the model.
 
-- Amy is our second user. As we can see from the second image below, she is predicted by our model that she is at risk of cardiovascular disease and our webapp gives a suggestion that she had better go to see her doctor.
+- Amy is our second user.
 
 ![input2.jpg](/images/input2.jpg)
 
