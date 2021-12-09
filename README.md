@@ -29,3 +29,7 @@ Through lots of experiments, we achieve the highest accuracy with the multinomia
 ## Part 2: Webapp Development
 
 ![root.jpg](/images/root.jpg)
+
+![input1.png](/images/input1.png)
+
+![result1.png](/images/result1.png)
