@@ -28,11 +28,23 @@ Through lots of experiments, we achieve the highest accuracy with the multinomia
 
 ## Part 2: Webapp Development
 
+Our webapp allows users to input their personal data and get a prediction on the risk of getting cardiovascular disease based on the model.
+
+This is the home page of our webapp.
+
 ![root.jpg](/images/root.jpg)
+
+By clicking the `Submit your information`, users will be directed to a page where they can submit their personal information. 
+
+Here are two examples showing different prediction results based on user input:
+
+- Our first user Tom inputs his information as shown in the next image and clicks the `Submit information` button. As we can see from the second image below, he is predicted by our model that he is healthy, i.e. not at risk of cardiovascular disease.
 
 ![input1.jpg](/images/input1.jpg)
 
 ![result1.jpg](/images/result1.jpg)
+
+- Our second user Amy inputs her information as shown in the next image and clicks the `Submit information` button. As we can see from the second image below, she is predicted by our model that she is at risk of cardiovascular disease and our webapp gives a suggestion that she had better go to see her doctor.
 
 ![input2.jpg](/images/input2.jpg)
 
