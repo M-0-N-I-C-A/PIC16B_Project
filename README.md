@@ -30,6 +30,10 @@ Through lots of experiments, we achieve the highest accuracy with the multinomia
 
 ![root.jpg](/images/root.jpg)
 
-![input1.png](/images/input1.png)
+![input1.jpg](/images/input1.jpg)
 
-![result1.png](/images/result1.png)
+![result1.jpg](/images/result1.jpg)
+
+![input2.jpg](/images/input2.jpg)
+
+![result2.jpg](/images/result2.jpg)
