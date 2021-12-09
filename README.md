@@ -49,7 +49,7 @@ She inputs her information as shown in the above image and clicks the `Submit in
 
 ![result2.jpg](/images/result2.jpg)
 
-As shown in this above image, our webapp predicts that she is at risk of cardiovascular disease and suggests that she had better go to see her doctor.
+As shown in this above image, our webapp predicts that she is at risk of cardiovascular disease and suggests that she had better go to see her doctor, based on the model.
 
 We recognize that our app might have the following limitations:
 
